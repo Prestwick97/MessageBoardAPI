@@ -3,14 +3,16 @@ using System;
 using MessageBoard.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MessageBoard.Migrations
 {
     [DbContext(typeof(MessageBoardContext))]
-    partial class MessageBoardContextModelSnapshot : ModelSnapshot
+    [Migration("20200330224655_ReReDate")]
+    partial class ReReDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -41,7 +43,7 @@ namespace MessageBoard.Migrations
                     b.HasData(
                         new
                         {
-                            MessageId = 1,
+                            MessageId = 3,
                             Content = "where the tp",
                             Group = "Shopping Boi's",
                             PostDate = new DateTime(2015, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -49,7 +51,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 2,
+                            MessageId = 4,
                             Content = "Pip",
                             Group = "Shark",
                             PostDate = new DateTime(2020, 2, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -57,7 +59,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 3,
+                            MessageId = 5,
                             Content = "Bartholomew's fancy hats",
                             Group = "Shark",
                             PostDate = new DateTime(2017, 7, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -65,7 +67,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 4,
+                            MessageId = 6,
                             Content = "Pip",
                             Group = "Shopping Boi's",
                             PostDate = new DateTime(2019, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -73,7 +75,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 5,
+                            MessageId = 7,
                             Content = "doppledonger",
                             Group = "Firework Sales",
                             PostDate = new DateTime(2017, 7, 11, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -81,7 +83,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 6,
+                            MessageId = 8,
                             Content = "bart",
                             Group = "Shark",
                             PostDate = new DateTime(2015, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -89,7 +91,7 @@ namespace MessageBoard.Migrations
                         },
                         new
                         {
-                            MessageId = 7,
+                            MessageId = 9,
                             Content = "bart",
                             Group = "Firework Sales",
                             PostDate = new DateTime(2019, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
