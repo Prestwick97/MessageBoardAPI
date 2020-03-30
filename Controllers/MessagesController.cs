@@ -3,6 +3,8 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MessageBoard.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
+
 
 namespace MessageBoard.Controllers
 {
@@ -19,7 +21,7 @@ namespace MessageBoard.Controllers
 
     // GET api/messages
     [HttpGet]
-    public ActionResult<IEnumerable<Message>> Get(string group)
+    public ActionResult<IEnumerable<Message>> Get(string group, DateTime postDate)
     {
       var query = _db.Messages.AsQueryable();
 
@@ -27,6 +29,11 @@ namespace MessageBoard.Controllers
       {
         query = query.Where(entry => entry.Group == group);
       }
+      if (postDate != null)
+      {
+        query = query.Where(entry => entry.PostDate == postDate);
+      }
+
 
       return query.ToList();
     }
