@@ -19,9 +19,16 @@ namespace MessageBoard.Controllers
 
     // GET api/messages
     [HttpGet]
-    public ActionResult<IEnumerable<Message>> Get()
+    public ActionResult<IEnumerable<Message>> Get(string group)
     {
-      return _db.Messages.ToList();
+      var query = _db.Messages.AsQueryable();
+
+      if (group != null)
+      {
+        query = query.Where(entry => entry.Group == group);
+      }
+
+      return query.ToList();
     }
     
     [HttpGet("{id}")]
