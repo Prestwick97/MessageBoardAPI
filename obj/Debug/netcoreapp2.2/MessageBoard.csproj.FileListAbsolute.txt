@@ -1,0 +1,14 @@
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/bin/Debug/netcoreapp2.2/MessageBoard.deps.json
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/bin/Debug/netcoreapp2.2/MessageBoard.runtimeconfig.json
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/bin/Debug/netcoreapp2.2/MessageBoard.runtimeconfig.dev.json
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/bin/Debug/netcoreapp2.2/MessageBoard.dll
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/bin/Debug/netcoreapp2.2/MessageBoard.pdb
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.csprojAssemblyReference.cache
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.csproj.CoreCompileInputs.cache
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.RazorAssemblyInfo.cache
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.RazorAssemblyInfo.cs
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.AssemblyInfoInputs.cache
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.AssemblyInfo.cs
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.RazorTargetAssemblyInfo.cache
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.dll
+/Users/patrickdelaney/Desktop/MessageBoard.Solution/MessageBoard/obj/Debug/netcoreapp2.2/MessageBoard.pdb
