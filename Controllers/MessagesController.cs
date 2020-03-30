@@ -22,6 +22,12 @@ namespace MessageBoard.Controllers
     {
       return _db.Messages.ToList();
     }
+    
+    [HttpGet("{id}")]
+    public ActionResult<Message> Get(int id)
+    {
+        return _db.Messages.FirstOrDefault(entry => entry.MessageId == id);
+    }
 
     // POST api/messages
     [HttpPost]
