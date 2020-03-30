@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MessageBoard.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MessageBoard.Controllers
 {
@@ -26,7 +27,7 @@ namespace MessageBoard.Controllers
     [HttpGet("{id}")]
     public ActionResult<Message> Get(int id)
     {
-        return _db.Messages.FirstOrDefault(entry => entry.MessageId == id);
+      return _db.Messages.FirstOrDefault(entry => entry.MessageId == id);
     }
 
     // POST api/messages
@@ -34,6 +35,22 @@ namespace MessageBoard.Controllers
     public void Post([FromBody] Message message)
     {
       _db.Messages.Add(message);
+      _db.SaveChanges();
+    }
+    
+    [HttpPut("{id}")]
+    public void Put(int id, [FromBody] Message message)
+    {
+      message.MessageId = id;
+      _db.Entry(message).State = EntityState.Modified;
+      _db.SaveChanges();
+    }
+    // DELETE api/messages/5
+    [HttpDelete("{id}")]
+    public void Delete(int id)
+    {
+      var messageToDelete = _db.Messages.FirstOrDefault(entry => entry.MessageId == id);
+      _db.Messages.Remove(messageToDelete);
       _db.SaveChanges();
     }
   }
